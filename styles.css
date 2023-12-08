@@ -1,36 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;700&display=swap');
+
+/* Apply the font to the body or specific elements */
 body {
-    font-family: sans-serif;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .product-item {
-    border: 1px solid #ddd;
-    margin: 0;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 0;
-  }
-  
-  img {
-    width: 100px;
-    margin-right: 10px;
-  }
-  
-  a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #000;
-  }
+  font-family: 'Satoshi', sans-serif;
+}
+
+/* Basic styling for the product container */
+.product-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: auto;
+  text-align: left;
+  justify-content: space-between;
+  list-style-type: none;
+  border-radius: 10px;
+}
+
+/* Style for the product image */
+.product-image {
+  display: block;
+  margin: 10px 30px;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+/* Style for the product title */
+.product-title {
+  font-size: 20px;
+  margin: 3%;
+  color: #333;
+}
+
+/* Style for the product price */
+.product-price {
+  font-size: 16px;
+  margin: 3%;
+}
+
+/* Style for the discount percentage */
+.discount {
+  color: #28a745;
+  margin-left: 5px;
+}
+
+/* Style for the category, stock, and view details */
+.product-info {
+  font-size: 14px;
+  color: #555;
+  margin: 3%;
+}
+
+/* Style for the "View Details" link */
+.view-details {
+  display: block;
+  margin-right: 2%; /* Align to the left */
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: bold;
+}
+
+.view-details:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+
+.product-detail-container {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.product-detail-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.product-image-container img {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  object-fit: cover;
+}
+
+.product-detail-price {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.discount-detail {
+  color: red;
+  font-size: smaller;
+}
+
+.product-detail-category,
+.product-detail-stock {
+  margin-bottom: 5px;
+}
