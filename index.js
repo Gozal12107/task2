@@ -24,7 +24,12 @@ document.getElementById('incrementButton').addEventListener('click', incrementCo
 
 
 function decrementCount() {
-    productCount -= 10;
+    if(productCount>0){
+        productCount -= 10;
+    }
+    else{
+        productCount = 0
+    }
     document.getElementById('countDisplay').innerText = 'Products showed: ' + productCount;
     fetchProducts();
 }
